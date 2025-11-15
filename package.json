@@ -1,7 +1,7 @@
 {
-  "homepage": "https://ArrysZD.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://arryszd.github.io/Portfolio/",
   "private": true,
   "dependencies": {
     "@react-pdf/renderer": "^2.2.0",
@@ -25,6 +25,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -52,6 +54,6 @@
     "eslint": "^8.57.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-jest": "^27.9.0",
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^3.2.3"
   }
 }

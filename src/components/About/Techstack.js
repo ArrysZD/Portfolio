@@ -10,7 +10,7 @@ import SQL from "../../Assets/TechIcons/SQL.svg";                 // SQL / SQLit
 import OracleDev from "../../Assets/TechIcons/SQL Developer.svg";  // Oracle (SQL Developer)
 import HTML5 from "../../Assets/TechIcons/HTML5.svg";
 import CSS3 from "../../Assets/TechIcons/CSS3.svg";
-
+import JavaScript from "../../Assets/TechIcons/javascript.svg"; // JavaScript
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
@@ -43,6 +43,12 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <img src={SQL} alt="SQL / SQLite" className="tech-icon-images" />
         <div className="tech-icons-text">SQL / SQLite</div>
+      </Col>
+
+      {/* javascript */}
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={JavaScript} alt="JavaScript" className="tech-icon-images" />
+        <div className="tech-icons-text">JavaScript</div>
       </Col>
 
       {/* Oracle via SQL Developer */}
