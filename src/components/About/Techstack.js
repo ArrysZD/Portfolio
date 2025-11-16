@@ -11,6 +11,8 @@ import OracleDev from "../../Assets/TechIcons/SQL Developer.svg";  // Oracle (SQ
 import HTML5 from "../../Assets/TechIcons/HTML5.svg";
 import CSS3 from "../../Assets/TechIcons/CSS3.svg";
 import JavaScript from "../../Assets/TechIcons/javascript.svg"; // JavaScript
+import Java from "../../Assets/TechIcons/Java.svg";
+
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
@@ -18,6 +20,13 @@ function Techstack() {
         <img src={Python} alt="Python" className="tech-icon-images" />
         <div className="tech-icons-text">Python</div>
       </Col>
+
+
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={Java} alt="Java" className="tech-icon-images" />
+        <div className="tech-icons-text">Java</div>
+      </Col>
+
 
       <Col xs={4} md={2} className="tech-icons">
         <img src={C} alt="C" className="tech-icon-images" />
