@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.8783c25a.css",
-    "main.js": "/Portfolio/static/js/main.a7cf6aee.js",
+    "main.js": "/Portfolio/static/js/main.8d71bf6f.js",
     "static/js/453.ac9b7e2a.chunk.js": "/Portfolio/static/js/453.ac9b7e2a.chunk.js",
     "static/media/fond.png": "/Portfolio/static/media/fond.b2e0bb16cf7506160e73.png",
     "static/media/avatar.svg": "/Portfolio/static/media/avatar.02bbb7008cb16bd082450fd126abff68.svg",
@@ -23,6 +23,7 @@
     "static/media/Python.svg": "/Portfolio/static/media/Python.9daed22c470296a63e19d0d509a1828b.svg",
     "static/media/pre.svg": "/Portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
     "static/media/javascript.svg": "/Portfolio/static/media/javascript.0866c81b3b841c647e23b8a5d991c312.svg",
+    "static/media/Java.svg": "/Portfolio/static/media/Java.980d8e77e92511acfefbf2dfdf4336e1.svg",
     "static/media/Bash.svg": "/Portfolio/static/media/Bash.e22f475189b9c606a3cbac0a243a840d.svg",
     "static/media/SQL Developer.svg": "/Portfolio/static/media/SQL Developer.943d9de65c8719d201080514f3ab0f67.svg",
     "static/media/RStudio.svg": "/Portfolio/static/media/RStudio.573df38df574219985a3b05e2a00ca80.svg",
@@ -32,11 +33,11 @@
     "static/media/C.svg": "/Portfolio/static/media/C.13f24c473f4fd7f944b1410cc8058a89.svg",
     "static/media/HTML5.svg": "/Portfolio/static/media/HTML5.8664168d5bc90b1a24396f85aadbf623.svg",
     "main.8783c25a.css.map": "/Portfolio/static/css/main.8783c25a.css.map",
-    "main.a7cf6aee.js.map": "/Portfolio/static/js/main.a7cf6aee.js.map",
+    "main.8d71bf6f.js.map": "/Portfolio/static/js/main.8d71bf6f.js.map",
     "453.ac9b7e2a.chunk.js.map": "/Portfolio/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8783c25a.css",
-    "static/js/main.a7cf6aee.js"
+    "static/js/main.8d71bf6f.js"
   ]
 }
