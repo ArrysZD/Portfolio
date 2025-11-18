@@ -85,21 +85,17 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/resume"
+                className="nav-glow-box"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{ marginBottom: "2px" }} /> CV
               </Nav.Link>
             </Nav.Item>
 
+
+
             <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/ArrysZD/Portfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
+
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

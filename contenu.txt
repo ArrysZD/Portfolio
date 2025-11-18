@@ -27,9 +27,9 @@ main.8783c25a.css.map
 ./build/static/js:
 453.ac9b7e2a.chunk.js
 453.ac9b7e2a.chunk.js.map
-main.8d71bf6f.js
-main.8d71bf6f.js.LICENSE.txt
-main.8d71bf6f.js.map
+main.9b0a259c.js
+main.9b0a259c.js.LICENSE.txt
+main.9b0a259c.js.map
 
 ./build/static/media:
 ARM.78d45400cf9c59562d772066ccb4768e.svg
@@ -41,9 +41,11 @@ Cowsay.15ac8006c358f71aa9d3.png
 Git.c08353563539c6459b353f29d8dd7bf2.svg
 Google Chrome.e4cb7a8170c050a508f0bb06b5606529.svg
 HTML5.8664168d5bc90b1a24396f85aadbf623.svg
+IA.54f5af03760162a622eb.png
 Java.980d8e77e92511acfefbf2dfdf4336e1.svg
 Linux.0cb7bf4e5cb9ed5e2333d50935fad3d4.svg
 OCaml.627772338758d8309154eea91aeb4227.svg
+Ocaml.e2337a46c453720981f5.png
 Python.9daed22c470296a63e19d0d509a1828b.svg
 RStudio.573df38df574219985a3b05e2a00ca80.svg
 SQL Developer.943d9de65c8719d201080514f3ab0f67.svg
@@ -54,6 +56,7 @@ avatar.02bbb7008cb16bd082450fd126abff68.svg
 fond.b2e0bb16cf7506160e73.png
 gestion.603f93a9379986e860ed.png
 home-main.541f8179af8209ce03ccf2178fe62dbf.svg
+interpreteur.6d89fecae967fb7a520d.png
 javascript.0866c81b3b841c647e23b8a5d991c312.svg
 logo.1847eec6fe3a89772eac.png
 pre.d4812f51c8c80976eaab.svg
@@ -88022,8 +88025,6 @@ style.css
 
 ./src/Assets:
 CV_Arris_ZAIDI.pdf
-ChatGPT Image 15 nov. 2025, 11 h 31 min 09 s.png:Zone.Identifier
-ChatGPT Image 15 nov. 2025, 11 h 33 min 00 s.png:Zone.Identifier
 Projects
 TechIcons
 about.png
@@ -88039,14 +88040,15 @@ pre.svg
 
 ./src/Assets/Projects:
 Cowsay.png
+IA.png
+Ocaml.png
 gestion.png
+interpreteur.png
 tetravex.png
 tour.png
 
 ./src/Assets/TechIcons:
-ARM.png:Zone.Identifier
 ARM.svg
-ARM.svg:Zone.Identifier
 AWS.svg
 Apple MacOSX.svg
 Bash.svg
@@ -88079,16 +88081,13 @@ Redis.svg
 Redux.svg
 SQL Developer.svg
 SQL.svg
-SQL.svg:Zone.Identifier
 Tailwind.svg
 Typescript.svg
 Virtualbox_logo.svg
 go.svg
 intellij-idea.svg
 java.svg
-java.svg:Zone.Identifier
 javascript.svg
-javascript.svg:Zone.Identifier
 vscode.svg
 
 ./src/Assets/background:

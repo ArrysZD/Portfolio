@@ -105,6 +105,50 @@ button:focus {
   font-size: 1.2rem !important;
 }
 
+/* Bouton CV encadré + glow */
+.nav-glow-box {
+  padding: 4px 4px !important;
+  font-size: 1.2rem !important;
+  border-radius: 70px;
+  color: #a676da !important;
+  font-weight: 500;
+  transition: 0.25s ease;
+  text-shadow: 0 0 6px #c770f0;
+  box-shadow: 0 0 8px rgba(199, 112, 240, 0.4);
+}
+
+/* Effet glow au hover */
+.nav-glow-box:hover {
+  border-color: #c770f0;
+  box-shadow:
+      0 0 10px #c770f0,
+      0 0 20px rgba(199, 112, 240, 0.7);
+  text-shadow:
+      0 0 12px #d395ff,
+      0 0 20px #a855f7;
+  transform: translateY(-1px);
+  background: rgba(199, 112, 240, 0.15);
+}
+
+/* Option : légère pulsation pour attirer l'œil */
+.nav-glow-box {
+  animation: softPulse 2.7s infinite ease-in-out;
+}
+
+@keyframes softPulse {
+  0% {
+    box-shadow: 0 0 8px rgba(199, 112, 240, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(199, 112, 240, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 8px rgba(199, 112, 240, 0.4);
+  }
+}
+
+
+
 .navbar-toggler {
   position: relative !important;
   background-color: transparent !important;
@@ -769,4 +813,245 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+/* --------- */
+/* Timeline Formations */
+/* --------- */
+
+.timeline-section {
+  margin-top: 60px;
+}
+
+.timeline-title {
+  font-size: 2.3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.timeline-wrapper {
+  position: relative;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 40px 0 20px;
+}
+
+/* Trait vertical au centre */
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  transform: translateX(-50%);
+  background: linear-gradient(180deg, #a78bfa, #6366f1);
+  opacity: 0.9;
+}
+
+/* Un item (bloc de formation) */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 16px 32px;
+  box-sizing: border-box;
+}
+
+/* Côté gauche = France */
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+/* Côté droit = hors France */
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+/* Point lumineux sur la ligne, aligné à chaque bloc */
+.timeline-dot {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #a78bfa;
+  box-shadow: 0 0 18px rgba(167, 139, 250, 0.95);
+}
+
+/* Position différente selon le côté (géométrie correcte) */
+.timeline-item.left .timeline-dot {
+  right: -7px;    /* centre du point pile sur la ligne */
+}
+
+.timeline-item.right .timeline-dot {
+  left: -7px;     /* centre du point pile sur la ligne */
+}
+
+/* Couleurs selon f.color dans le composant React */
+.dot-violet {
+  background: #a855f7;
+  box-shadow: 0 0 18px rgba(168, 85, 247, 0.9);
+}
+
+
+/* Carte contenant le contenu de la formation */
+.timeline-card {
+  background: radial-gradient(circle at top left, rgba(88, 28, 135, 0.28), transparent 55%),
+              rgba(15, 23, 42, 0.92);
+  border-radius: 18px;
+  padding: 16px 20px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 24px 40px rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(12px);
+}
+
+/* Petit trait qui relie la carte au point de la ligne */
+.timeline-item.left .timeline-card::after,
+.timeline-item.right .timeline-card::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 28px;
+  height: 2px;
+  transform: translateY(-50%);
+}
+
+/* Côté gauche : épais au bloc, fin vers la ligne */
+.timeline-item.left .timeline-card {
+  position: relative;
+  margin-right: 35px;
+}
+.timeline-item.left .timeline-card::after {
+  right: -28px;
+  background: linear-gradient(
+    to right,
+    #a78bfa,
+    rgba(167, 139, 250, 0.05)
+  );
+}
+
+/* Côté droit : épais au bloc, fin vers la ligne */
+.timeline-item.right .timeline-card {
+  position: relative;
+  margin-left: 35px;
+}
+.timeline-item.right .timeline-card::after {
+  left: -28px;
+  background: linear-gradient(
+    to left,
+    #a78bfa,
+    rgba(167, 139, 250, 0.05)
+  );
+}
+
+/* Badge de date */
+.timeline-date {
+  display: inline-block;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #f9fafb;
+  margin-bottom: 8px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #a855f7, #6366f1);
+  box-shadow: 0 0 12px rgba(129, 140, 248, 0.5);
+}
+
+/* Texte de la carte */
+.timeline-titre {
+  font-size: 1rem;
+  margin: 0;
+  color: #e5e7eb;
+}
+
+.timeline-ecole {
+  font-size: 0.95rem;
+  margin: 2px 0 4px;
+  color: #c4b5fd;
+}
+
+.timeline-lieu {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  margin-bottom: 6px;
+}
+
+.timeline-desc {
+  font-size: 0.9rem;
+  color: #d1d5db;
+  margin-bottom: 0;
+}
+
+/* Tags en bas de carte */
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.timeline-tag {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(55, 65, 81, 0.9);
+  color: #e5e7eb;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+}
+
+/* Effet hover sur la carte */
+.timeline-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 26px 40px rgba(15, 23, 42, 0.9);
+  border-color: rgba(196, 181, 253, 0.8);
+  transition: all 0.25s ease;
+}
+
+/* Responsive : une seule colonne */
+@media (max-width: 768px) {
+  .timeline-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .timeline-line {
+    left: 24px;
+    transform: none;
+  }
+
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
+
+  .timeline-item.left .timeline-card,
+  .timeline-item.right .timeline-card {
+    margin: 0;
+  }
+
+  .timeline-dot {
+    left: 24px;
+    right: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  .timeline-item.left .timeline-card::after,
+  .timeline-item.right .timeline-card::after {
+    left: -36px;
+    right: auto;
+    width: 36px;
+    background: linear-gradient(
+      to left,
+      #a78bfa,
+      rgba(167, 139, 250, 0.05)
+    );
+  }
 }
