@@ -75,7 +75,7 @@ function Projects() {
               title="Interpréteur ARM en C"
               description="Un mini-interpréteur écrit en C permettant d’analyser, interpréter et exécuter un langage assembleur simplifié."
               ghLink="https://github.com/ArrysZD/INTERPRETEUR_ARM_EN_C"
-              stack={["C", "CLI", "Parsing"]}
+              stack={["C", "ARM", "analyse"]}
             />
           </Col>
 
