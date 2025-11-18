@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.8783c25a.css",
-    "main.js": "/Portfolio/static/js/main.8d71bf6f.js",
+    "main.js": "/Portfolio/static/js/main.524b19d8.js",
     "static/js/453.ac9b7e2a.chunk.js": "/Portfolio/static/js/453.ac9b7e2a.chunk.js",
     "static/media/fond.png": "/Portfolio/static/media/fond.b2e0bb16cf7506160e73.png",
     "static/media/avatar.svg": "/Portfolio/static/media/avatar.02bbb7008cb16bd082450fd126abff68.svg",
@@ -9,6 +9,7 @@
     "static/media/logo.png": "/Portfolio/static/media/logo.1847eec6fe3a89772eac.png",
     "static/media/home-main.svg": "/Portfolio/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
     "static/media/about.png": "/Portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/interpreteur.png": "/Portfolio/static/media/interpreteur.6d89fecae967fb7a520d.png",
     "static/media/CV_Arris_ZAIDI.pdf": "/Portfolio/static/media/CV_Arris_ZAIDI.3dce2c9035dcb0653c68.pdf",
     "static/media/Virtualbox_logo.svg": "/Portfolio/static/media/Virtualbox_logo.beda21ed0bd36ef5cd38a0be04f8899f.svg",
     "static/media/tour.png": "/Portfolio/static/media/tour.9fd8fafac4d0b8f2014d.png",
@@ -33,11 +34,11 @@
     "static/media/C.svg": "/Portfolio/static/media/C.13f24c473f4fd7f944b1410cc8058a89.svg",
     "static/media/HTML5.svg": "/Portfolio/static/media/HTML5.8664168d5bc90b1a24396f85aadbf623.svg",
     "main.8783c25a.css.map": "/Portfolio/static/css/main.8783c25a.css.map",
-    "main.8d71bf6f.js.map": "/Portfolio/static/js/main.8d71bf6f.js.map",
+    "main.524b19d8.js.map": "/Portfolio/static/js/main.524b19d8.js.map",
     "453.ac9b7e2a.chunk.js.map": "/Portfolio/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8783c25a.css",
-    "static/js/main.8d71bf6f.js"
+    "static/js/main.524b19d8.js"
   ]
 }
