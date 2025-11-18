@@ -9,7 +9,7 @@ import hanoi from "../../Assets/Projects/tour.png";
 import gestion from "../../Assets/Projects/gestion.png";
 import tetravex from "../../Assets/Projects/tetravex.png";
 import interpreteur from "../../Assets/Projects/interpreteur.png";
-import IA from "../../Assets/Projects/ia.png";
+import IA from "../../Assets/Projects/IA.png";
 import Ocaml from "../../Assets/Projects/Ocaml.png";
 
 function Projects() {
