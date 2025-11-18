@@ -9,6 +9,8 @@ import hanoi from "../../Assets/Projects/tour.png";
 import gestion from "../../Assets/Projects/gestion.png";
 import tetravex from "../../Assets/Projects/tetravex.png";
 import interpreteur from "../../Assets/Projects/interpreteur.png";
+import IA from "../../Assets/Projects/ia.png";
+import Ocaml from "../../Assets/Projects/Ocaml.png";
 
 function Projects() {
   return (
@@ -76,6 +78,28 @@ function Projects() {
               description="Un mini-interpréteur écrit en C permettant d’analyser, interpréter et exécuter un langage assembleur simplifié."
               ghLink="https://github.com/ArrysZD/INTERPRETEUR_ARM_EN_C"
               stack={["C", "ARM", "analyse"]}
+            />
+          </Col>
+
+          {/* 6) Intro machine learning */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={IA}
+              title="Image Processing with Python"
+              description="L'objectif du projet est le suivant : à partir du scan d'un document papier contenant une suite de chiffres manuscrits (de 0 à 9), vous allez développer un algorithme d'intelligence artificielle capable de localiser la position des chiffres et de reconnaître chacun d'entre eux."
+              ghLink="https://github.com/ArrysZD/Introduction_en_machine_learning"
+              stack={["Jupyter-Notebook", "python", "HTML"]}
+            />
+          </Col>
+
+          {/* 7) Intro machine learning */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Ocaml}
+              title=" Projet Les dames chinoises"
+              description="Implémentation du jeu de Dames Chinoises avec règles des sauts distants et symétriques. Projet de modélisation et vérification des règles du jeu en OCaml."
+              ghLink="https://github.com/ArrysZD/Projet_Ocaml"
+              stack={["Ocaml", "Algo"]}
             />
           </Col>
 
