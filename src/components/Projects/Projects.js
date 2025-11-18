@@ -8,6 +8,7 @@ import cowsay from "../../Assets/Projects/Cowsay.png";
 import hanoi from "../../Assets/Projects/tour.png";
 import gestion from "../../Assets/Projects/gestion.png";
 import tetravex from "../../Assets/Projects/tetravex.png";
+import interpreteur from "../../Assets/Projects/interpreteur.png";
 
 function Projects() {
   return (
@@ -33,6 +34,7 @@ function Projects() {
               stack={["C", "CLI", "Parsing"]}
             />
           </Col>
+
 
           {/* 2) Tours de Hanoï */}
           <Col md={4} className="project-card">
@@ -66,6 +68,19 @@ function Projects() {
               stack={["OCaml", "Python", "SAT", "DIMACS"]}
             />
           </Col>
+          {/* 5) Interpréteur ARM en C */}
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={interpreteur}
+              title="Interpréteur ARM en C"
+              description="Un mini-interpréteur écrit en C permettant d’analyser, interpréter et exécuter un langage assembleur simplifié."
+              ghLink="https://github.com/ArrysZD/INTERPRETEUR_ARM_EN_C"
+              stack={["C", "CLI", "Parsing"]}
+            />
+          </Col>
+
+
+
 
         </Row>
       </Container>
