@@ -2,7 +2,7 @@ import React from "react";
 
 const formations = [
   {
-    periode: "2024 – 2025",
+    periode: "2025 – 2026",
     titre: "Licence Informatique – L3",
     ecole: "Université Grenoble Alpes (UFR IM2AG)",
     lieu: "Grenoble, France",
@@ -10,32 +10,32 @@ const formations = [
     color: "violet",
     description:
       "Troisième année de licence : algorithmique avancée, automates, compilation, IA, systèmes et bases de données. Orientation progressive vers la cybersécurité et le développement logiciel.",
-    tags: ["Algorithmique", "Automates", "Cybersécurité"]
+    tags: ["Algorithmique", "Automates", "Architecture machine" ]
   },
   {
-    periode: "2023 – 2024",
+    periode: "2024 – 2025",
     titre: "Licence Informatique – L2",
-    ecole: "Université Grenoble Alpes (UFR IM2AG)",
+    ecole: "Université Grenoble Alpes",
     lieu: "Grenoble, France",
     type: "fr",
     color: "blue",
     description:
       "Approfondissement en algorithmique, structures de données, théorie des graphes, logique, probabilités et statistiques.",
-    tags: ["C", "Python", "Graphes"]
+    tags: ["C", "Python", "Graphes", "Statistiques", "Automates"]
   },
   {
-    periode: "2022 – 2023",
+    periode: "2023 – 2024",
     titre: "Licence Informatique – L1",
-    ecole: "Université Grenoble Alpes (UFR IM2AG)",
+    ecole: "Université Grenoble Alpes ",
     lieu: "Grenoble, France",
     type: "fr",
     color: "green",
     description:
       "Bases en programmation, mathématiques discrètes, logique et architecture des ordinateurs.",
-    tags: ["Python", "Linéaire", "Logique"]
+    tags: ["Python", "Algèbre", "Logique"]
   },
   {
-    periode: "2021 – 2022",
+    periode: "2022 – 2023",
     titre: "1ère année d’ingénierie en informatique",
     ecole: "Université de Béjaïa",
     lieu: "Béjaïa, Algérie",
@@ -46,9 +46,9 @@ const formations = [
     tags: ["C", "Python", "Systèmes"]
   },
   {
-    periode: "2020 – 2021",
+    periode: "2021 – 2022",
     titre: "Baccalauréat – Sciences expérimentales (Mention Très Bien)",
-    ecole: "Lycée …",
+    ecole: "Lycée Khatri Omar",
     lieu: "Algérie",
     type: "intl",
     color: "yellow",

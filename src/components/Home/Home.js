@@ -4,11 +4,17 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import Button from "react-bootstrap/Button";
+
 import {
   AiFillGithub,
 
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { CgFileDocument } from "react-icons/cg";
+
+
 
 function Home() {
   return (
@@ -33,24 +39,24 @@ function Home() {
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
-            </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
-            </Col>
-          </Row>
-        </Container>
-      </Container>
-      <Home2 />
 
-      <Container>
-        <Row style={{ paddingTop: "50px", paddingBottom: "80px" }}>
-          <Col md={12} className="home-about-social">
+              <div style={{ paddingLeft: 50, marginTop: 10 }}>
+                <Button
+                  as={Link}
+                  to="/resume"
+                  className="cv-button"
+                  variant="outline-light"
+                >
+                  <CgFileDocument style={{ marginBottom: "2px" }} /> Voir mon CV
+                </Button>
+              </div>
+
+
+
+              <Container>
+        <Row style={{ paddingTop: "20px", paddingTop: "40px" }}>
+          <Col md={10} className="home-about-social">
             <h1>Retrouvez-moi ici</h1>
             <p>
               N’hésitez pas à <span className="purple">me contacter</span> ou à suivre mes projets!
@@ -80,6 +86,22 @@ function Home() {
           </Col>
         </Row>
       </Container>
+            </Col>
+
+            <Col md={5} style={{ paddingBottom: 20 }}>
+              <img
+                src={homeLogo}
+                alt="home pic"
+                className="img-fluid"
+                style={{ maxHeight: "450px" }}
+              />
+            </Col>
+          </Row>
+        </Container>
+      </Container>
+      <Home2 />
+
+
     </section>
   );
 }

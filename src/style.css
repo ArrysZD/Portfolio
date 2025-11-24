@@ -105,35 +105,97 @@ button:focus {
   font-size: 1.2rem !important;
 }
 
-/* Bouton CV encadré + glow */
-.nav-glow-box {
-  padding: 4px 4px !important;
-  font-size: 1.2rem !important;
-  border-radius: 70px;
-  color: #a676da !important;
-  font-weight: 500;
-  transition: 0.25s ease;
-  text-shadow: 0 0 6px #c770f0;
-  box-shadow: 0 0 8px rgba(199, 112, 240, 0.4);
-}
+/* Bouton CV : pill discret mais visible */
+/* ===== Bouton CV : glassmorphism + ripple ===== */
 
-/* Effet glow au hover */
-.nav-glow-box:hover {
-  border-color: #c770f0;
+.cv-button {
+  position: relative;
+  overflow: hidden; /* nécessaire pour le ripple */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 26px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  border-radius: 999px;
+  border: 1px solid rgba(199, 112, 240, 0.7);
+
+  /* glassmorphism */
+  background: linear-gradient(
+      135deg,
+      rgba(30, 64, 175, 0.22),
+      rgba(76, 29, 149, 0.5)
+    );
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  color: #efe9ff;
+  text-shadow: 0 0 4px rgba(15, 23, 42, 0.9);
+
   box-shadow:
-      0 0 10px #c770f0,
-      0 0 20px rgba(199, 112, 240, 0.7);
-  text-shadow:
-      0 0 12px #d395ff,
-      0 0 20px #a855f7;
-  transform: translateY(-1px);
-  background: rgba(199, 112, 240, 0.15);
+    0 14px 30px rgba(15, 23, 42, 0.85),
+    0 0 12px rgba(129, 140, 248, 0.6);
+
+  cursor: pointer;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease,
+    background 0.25s ease,
+    color 0.22s ease;
 }
 
-/* Option : légère pulsation pour attirer l'œil */
-.nav-glow-box {
-  animation: softPulse 2.7s infinite ease-in-out;
+/* Hover : un peu plus lumineux */
+.cv-button:hover {
+  transform: translateY(-2px);
+  border-color: #e9d5ff;
+  color: #f9fafb;
+  box-shadow:
+    0 18px 36px rgba(15, 23, 42, 0.95),
+    0 0 18px rgba(165, 180, 252, 0.9);
 }
+
+/* Ripple effect au clic */
+.cv-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  background: rgba(248, 250, 252, 0.55);
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0.7;
+
+  pointer-events: none;
+}
+
+.cv-button:active::after {
+  transform: translate(-50%, -50%) scale(18);
+  opacity: 0;
+  transition:
+    transform 0.45s ease-out,
+    opacity 0.45s ease-out;
+}
+
+/* Petit effet pressé sur le bouton */
+.cv-button:active {
+  transform: translateY(0px) scale(0.97);
+  box-shadow:
+    0 10px 24px rgba(15, 23, 42, 0.9),
+    0 0 10px rgba(129, 140, 248, 0.7);
+}
+
+
+
+
 
 @keyframes softPulse {
   0% {
@@ -215,9 +277,17 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 2em !important;
+  width: 3.5em !important;
 }
+
+.footer {
+  background-color: rgba(10, 4, 22, 0.8);
+  padding: 10px 0;
+  margin-top: 50px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
 
 .navbar-nav .nav-link {
   color: white !important;
@@ -304,10 +374,10 @@ button:focus {
 }
 #tsparticles {
   position: fixed !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
   width: 100%;
   height: 100%;
+  z-index: -1 !important;
+  pointer-events: none !important;
 }
 
 .home-header {
@@ -316,13 +386,13 @@ button:focus {
 
 .home-section {
   position: relative;
-  z-index: -1;
-  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
+  z-index: 1; /* ou supprime totalement */
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
+
 
 .home-content {
   padding: 9rem 0 2rem !important;
@@ -458,23 +528,6 @@ button:focus {
   color: #700c86 !important;
 }
 
-/* --------- */
-/* Footer */
-/* --------- */
-.footer {
-  background-color: rgb(10, 4, 22);
-  bottom: 0 !important;
-  padding-top: 10px !important;
-  padding-bottom: 8px !important ;
-}
-.footer-copywright {
-  text-align: center !important;
-}
-
-.footer-body {
-  z-index: 1;
-  text-align: center !important;
-}
 
 @media (max-width: 767px) {
   .footer-copywright {
@@ -1055,3 +1108,4 @@ button:focus {
     );
   }
 }
+

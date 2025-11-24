@@ -81,16 +81,19 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/*<Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/resume"
-                className="nav-glow-box"
                 onClick={() => updateExpanded(false)}
+                className="nav-glow-box"
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> CV
+                <CgFileDocument style={{ marginBottom: "2px" }} />
+                <span style={{ marginLeft: "6px" }}>CV</span>
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item>*/}
+
+
 
 
 
