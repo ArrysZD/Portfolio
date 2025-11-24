@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
+import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
+
+import avatarImg from "../../Assets/avatar.svg";
+import karateImg from "../../Assets/karate.png"; // ta photo karaté
 
 function Home2() {
+  const [currentImg, setCurrentImg] = useState(avatarImg);
+
+  const handleKarateClick = () => {
+    setCurrentImg(karateImg);
+
+    // revenir à l’avatar après 10 secondes
+    setTimeout(() => {
+      setCurrentImg(avatarImg);
+    }, 10000);
+  };
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -12,68 +27,67 @@ function Home2() {
             <h1 style={{ fontSize: "2.6em" }}>
               LAISSEZ-MOI <span className="purple">ME PRÉSENTER</span>
             </h1>
+
             <p className="home-about-body">
-              Je m'appelle <b className="purple">ZAIDI Arris</b>, étudiant en{" "}
-              <b className="purple">Licence 3 Informatique</b> à l'
-              <b className="purple">Université Grenoble Alpes</b>.
+              Passionné par l’informatique, j’aime explorer plusieurs univers :
+              <span className="purple"> cybersécurité</span>,{" "}
+              <span className="purple">data</span>,{" "}
+              <span className="purple">IA</span> et{" "}
+              <span className="purple">développement logiciel</span>.
               <br />
               <br />
-              Passionné par la <b className="purple">cybersécurité</b>, je
-              m'intéresse aussi au <b className="purple">développement
-              logiciel</b> et à l'<b className="purple">intelligence
-              artificielle</b>. Mon objectif est de devenir un ingénieur capable
-              d’évoluer dans plusieurs domaines techniques, tout en gardant un
-              fort intérêt pour la sécurité informatique et les systèmes.
+              Ce site vous permet de découvrir mon parcours, mes projets et ce
+              qui me motive à évoluer dans différents domaines.
               <br />
               <br />
-              Je travaille principalement avec{" "}
-              <i>
-                <b className="purple">
-                  C, Python, OCaml, ARM (assembleur) et Bash
-                </b>
-              </i>
-              , et j’ai de l’expérience en bases de données{" "}
-              <i>
-                <b className="purple">SQL / SQLite / Oracle</b>
-              </i>
-              . Côté Web, je maîtrise{" "}
-              <i>
-                <b className="purple">HTML &amp; CSS</b>
-              </i>{" "}
-              pour la conception d’interfaces simples et efficaces.
-              <br />
-              <br />
-              J’ai participé à plusieurs projets, dont un{" "}
-              <b className="purple">solveur Tetravex via SAT</b> (OCaml + Python),
-              une <b className="purple">application de gestion de matériel</b>,
-              un <b className="purple">interpréteur ARM</b>, un{" "}
-              <b className="purple">gestionnaire d’étudiants</b> et un{" "}
-              <b className="purple">jeu des Tours de Hanoï</b>.
-              <br />
-              <br />
-              En dehors de l’informatique, je suis{" "}
-              <b className="purple">sportif de haut niveau en karaté</b> —
-              champion de France universitaire 🥇, troisième en Coupe de France 🥉
-              et médaillé sur plusieurs compétitions nationales et
-              internationales. Cette discipline m’a appris la{" "}
-              <b className="purple">rigueur, la persévérance et la concentration</b>.
-              <br />
-              <br />
-              Au quotidien, j’utilise{" "}
-              <b className="purple">
-                VS Code, Git, Linux/Ubuntu, DB Browser for SQLite, RStudio et
-                VirtualBox
+              En dehors de l’écran, je pratique le{" "}
+              <b className="purple" style={{ cursor: "pointer" }} onClick={handleKarateClick}>
+                karaté en haut niveau (cliquez ici 🥋)
               </b>
-              , avec une priorité donnée à la qualité, la clarté et la sécurité
-              du code.
+              , une discipline qui m’a appris la rigueur et la persévérance.
             </p>
 
+            {/* Bloc navigation vers les sections */}
+            <div className="home-navigation" style={{ marginTop: "20px" }}>
+              <h3 style={{ fontSize: "1.4em", marginBottom: "10px" }}>
+                Explorer le site
+              </h3>
+              <p style={{ marginBottom: "15px" }}>
+                Pour en savoir plus sur moi :
+              </p>
+              <div style={{ display: "grid", gap: "10px", flexWrap: "wrap" }}>
+                <Button
+                  as={Link}
+                  to="/about"
+                  variant="outline-light"
+                  className="cv-button"
+                >
+                  Formation &amp; compétences
+                </Button>
+                <Button
+                  as={Link}
+                  to="/project"
+                  variant="outline-light"
+                  className="cv-button"
+                >
+                  Projets
+                </Button>
+              </div>
+            </div>
           </Col>
 
-          {/* Image avatar */}
           <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+            <Tilt glareEnable={true} glareMaxOpacity={0.2} scale={1.05}>
+              <img
+                src={currentImg}
+                className="img-fluid"
+                alt="avatar"
+                style={{
+                  borderRadius: "12px",
+                  cursor: "pointer"
+                }}
+                onClick={handleKarateClick}
+              />
             </Tilt>
           </Col>
         </Row>
@@ -83,4 +97,3 @@ function Home2() {
 }
 
 export default Home2;
-
