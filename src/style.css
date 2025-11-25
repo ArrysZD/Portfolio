@@ -1,6 +1,6 @@
 body {
   background: linear-gradient(rgba(5, 10, 35, 0.9), rgba(2, 5, 15, 0.95)),
-              url("./Assets/background/fond.png");
+              url("./Assets/background/fond.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
