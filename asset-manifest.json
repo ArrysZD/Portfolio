@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.6cbdcda8.css",
-    "main.js": "/Portfolio/static/js/main.bbece228.js",
+    "main.js": "/Portfolio/static/js/main.68d61f21.js",
     "static/js/453.ac9b7e2a.chunk.js": "/Portfolio/static/js/453.ac9b7e2a.chunk.js",
     "static/media/karate.png": "/Portfolio/static/media/karate.c92b492cc3d5788c9aa2.png",
     "static/media/avatar.svg": "/Portfolio/static/media/avatar.02bbb7008cb16bd082450fd126abff68.svg",
+    "static/media/CV_Arris_ZAIDI.pdf": "/Portfolio/static/media/CV_Arris_ZAIDI.9df93f169e5973f057d5.pdf",
     "static/media/fond.jpg": "/Portfolio/static/media/fond.3493062cf311626c8fc3.jpg",
     "static/media/Linux.svg": "/Portfolio/static/media/Linux.0cb7bf4e5cb9ed5e2333d50935fad3d4.svg",
     "static/media/Ocaml.png": "/Portfolio/static/media/Ocaml.e2337a46c453720981f5.png",
@@ -12,7 +13,6 @@
     "static/media/home-main.svg": "/Portfolio/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
     "static/media/about.png": "/Portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
     "static/media/interpreteur.png": "/Portfolio/static/media/interpreteur.6d89fecae967fb7a520d.png",
-    "static/media/CV_Arris_ZAIDI.pdf": "/Portfolio/static/media/CV_Arris_ZAIDI.958a5e2158f32e24dd8c.pdf",
     "static/media/Virtualbox_logo.svg": "/Portfolio/static/media/Virtualbox_logo.beda21ed0bd36ef5cd38a0be04f8899f.svg",
     "static/media/tour.png": "/Portfolio/static/media/tour.9fd8fafac4d0b8f2014d.png",
     "static/media/gestion.png": "/Portfolio/static/media/gestion.603f93a9379986e860ed.png",
@@ -37,11 +37,11 @@
     "static/media/C.svg": "/Portfolio/static/media/C.13f24c473f4fd7f944b1410cc8058a89.svg",
     "static/media/HTML5.svg": "/Portfolio/static/media/HTML5.8664168d5bc90b1a24396f85aadbf623.svg",
     "main.6cbdcda8.css.map": "/Portfolio/static/css/main.6cbdcda8.css.map",
-    "main.bbece228.js.map": "/Portfolio/static/js/main.bbece228.js.map",
+    "main.68d61f21.js.map": "/Portfolio/static/js/main.68d61f21.js.map",
     "453.ac9b7e2a.chunk.js.map": "/Portfolio/static/js/453.ac9b7e2a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6cbdcda8.css",
-    "static/js/main.bbece228.js"
+    "static/js/main.68d61f21.js"
   ]
 }
